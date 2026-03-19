@@ -11,12 +11,20 @@ Nuget:
 https://www.nuget.org/packages/OpenExcelSdk
 
 
-## Creating a new Excel file and adding data
+## Open a new Excel file and get data
 
 ```
-csharp
-using OpenExcelSdk;
+public class BasicSample
+{
+    public static void DisplaySomeValuesAndTypes()
+
+    public static void DisplayValuesAndTypesRowByRow()
+
+}
 ```
+
+
+## Creating a new Excel file and adding data
 
 
 
