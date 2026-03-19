@@ -14,13 +14,11 @@ https://www.nuget.org/packages/OpenExcelSdk
 ## Open a new Excel file and get data
 
 ```
-public class BasicSample
-{
-    public static void DisplaySomeValuesAndTypes()
+// Display some cell values, and the type of the cell value
+DisplayValues.Run();
 
-    public static void DisplayValuesAndTypesRowByRow()
-
-}
+// Display cell values row by row, and the type of the cell value
+DisplayValueRowByRow.Run();
 ```
 
 

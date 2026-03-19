@@ -2,12 +2,10 @@
 
 Console.WriteLine("=> OpenExcelSdkSamplesApp:");
 
-// sample code to demonstrate how to use OpenExcelSdk to read and write Excel files
 
-// todo: lire des cellules d'un fichier Excel et les afficher dans la console
+// Display some cell values, and the type of the cell value
+DisplayValues.Run();
 
-// todo: modifier des cells d'un fichier Excel et les enregistrer
+// Display cell values row by row, and the type of the cell value
+DisplayValueRowByRow.Run();
 
-BasicSample.DisplaySomeValuesAndTypes();
-
-BasicSample.DisplayValuesAndTypesRowByRow();

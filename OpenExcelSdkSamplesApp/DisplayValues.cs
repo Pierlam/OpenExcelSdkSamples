@@ -11,9 +11,9 @@ namespace OpenExcelSdkSamplesApp;
 /// <summary>
 /// Read some  cell values from an excel file, and display the type and value of the cell.
 /// </summary>
-public class BasicSample
+public class DisplayValues
 {
-    public static void DisplaySomeValuesAndTypes()
+    public static void Run()
     {
         ExcelProcessor proc = new ExcelProcessor();
 
@@ -65,7 +65,7 @@ public class BasicSample
         proc.CloseExcelFile(excelFile);
 
 
-        /* Display result in console:
+/* Display result in console:
 => OpenExcelSdkSamplesApp:
 A2: Value: hello, cell type: String
 A3: Value: 12, cell type: Integer
@@ -74,27 +74,7 @@ A5: Value: 12/10/2025, cell type: DateOnly
 A6: Value: 03:45, cell type: TimeOnly
 A7: Value: 1200, cell type: Double
 A8: Value: 3400, cell type: Double         
-         */
+*/
     }
 
-
-    public static void DisplayValuesAndTypesRowByRow()
-    {
-        ExcelProcessor proc = new ExcelProcessor();
-
-        // open an excel file
-        string filename = @".\ExcelFiles\BasicSample.xlsx";
-        ExcelFile excelFile = proc.OpenExcelFile(filename);
-
-        // get the first sheet of the excel file
-        ExcelSheet excelSheet = proc.GetFirstSheet(excelFile);
-
-        // scan each row
-        for () { }
-
-        //==A2: hello - string
-        // get a cell, if the cell doesn't exists, cell is null, it's not an error 
-        ExcelCell excelCell = proc.GetCellAt(excelSheet, "A2");
-
-    }
-   }
+}
