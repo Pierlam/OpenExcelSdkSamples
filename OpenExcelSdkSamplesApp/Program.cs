@@ -3,9 +3,12 @@
 Console.WriteLine("=> OpenExcelSdkSamplesApp:");
 
 
-// Display some cell values, and the type of the cell value
-DisplayValues.Run();
+// get some cell values, focus on basic value type, such as string, integer, double, date and time
+GetCellValue.GetBasicValue();
 
-// Display cell values row by row, and the type of the cell value
-DisplayValueRowByRow.Run();
+// get some cell values, focus on currency value
+GetCellValue.GetCurrencyValue();
+
+// get cell value row by row
+GetCellValueRowByRow.Run();
 

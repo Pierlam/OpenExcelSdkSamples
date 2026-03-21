@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OpenExcelSdkSamplesApp;
 
-public class DisplayValueRowByRow
+public class GetCellValueRowByRow
 {
     public static void Run()
     {
