@@ -17,8 +17,10 @@ public class GetCellValue
     {
         ExcelProcessor proc = new ExcelProcessor();
 
+        Console.WriteLine("-> GetCellValue.GetBasicValue:");
+
         // open an excel file
-        string filename = @".\ExcelFiles\BasicSample.xlsx";
+        string filename = @".\ExcelFiles\GetCellValue.xlsx";
         ExcelFile excelFile = proc.OpenExcelFile(filename);
 
         // get the first sheet of the excel file
@@ -56,7 +58,6 @@ public class GetCellValue
 
 
         /* Display result in console:
-        => OpenExcelSdkSamplesApp:
         A2: Value: hello, cell type: String
         A3: Value: 12, cell type: Integer
         A4: Value: 34,45, cell type: Double
@@ -70,8 +71,10 @@ public class GetCellValue
     {
         ExcelProcessor proc = new ExcelProcessor();
 
+        Console.WriteLine("-> GetCellValue.GetCurrencyValue:");
+
         // open an excel file
-        string filename = @".\ExcelFiles\BasicSample.xlsx";
+        string filename = @".\ExcelFiles\GetCellValue.xlsx";
         ExcelFile excelFile = proc.OpenExcelFile(filename);
 
         // get the first sheet of the excel file
@@ -80,19 +83,19 @@ public class GetCellValue
         //==A7: 1 200 €	- currency, euro
         ExcelCell excelCell = proc.GetCellAt(excelSheet, "A7");
         ExcelCellValue excelCellValue = proc.GetCellValue(excelSheet, excelCell);
-        Console.WriteLine("A7: Value: {0}, cell type: {1}", excelCellValue.DoubleValue, excelCellValue.CellType.ToString());
+        Console.WriteLine("A7: Value: {0}, cell type: {1}, CurrencyName: {2}", excelCellValue.DoubleValue, excelCellValue.CellType.ToString(), excelCellValue.Currency.Name);
 
         //==A8:  $3 400,00 - currency,  US Dollar
         excelCell = proc.GetCellAt(excelSheet, "A8");
         excelCellValue = proc.GetCellValue(excelSheet, excelCell);
-        Console.WriteLine("A8: Value: {0}, cell type: {1}", excelCellValue.DoubleValue, excelCellValue.CellType.ToString());
+        Console.WriteLine("A8: Value: {0}, cell type: {1}, CurrencyName: {2}", excelCellValue.DoubleValue, excelCellValue.CellType.ToString(), excelCellValue.Currency.Name);
 
         proc.CloseExcelFile(excelFile);
 
         /* Display result in console:
         => OpenExcelSdkSamplesApp:
-        A7: Value: 1200, cell type: Double
-        A8: Value: 3400, cell type: Double         
+        A7: Value: 1200, cell type: Double, CurrencyName: Euro
+        A8: Value: 3400, cell type: Double, CurrencyName: UsDollar        
         */
 
     }

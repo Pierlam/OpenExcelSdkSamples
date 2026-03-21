@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ExcelFiles\" />
     <Folder Include="ExcelFilesOut\" />
   </ItemGroup>
 
@@ -17,7 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ExcelFiles\BasicSample.xlsx">
+    <None Update="ExcelFiles\GetCellValueRowByRow.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ExcelFiles\GetCellValue.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
