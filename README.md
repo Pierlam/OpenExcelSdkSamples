@@ -2,7 +2,6 @@
 
 Here are some code samples for using the OpenExcelSdk library to read and write Excel files in C#. These examples demonstrate how to create a new Excel file, add data to it, and read data from an existing Excel file.
 
-
 Source code repository:
 https://github.com/Pierlam/OpenExcelSdk
 
@@ -11,12 +10,7 @@ Nuget:
 https://www.nuget.org/packages/OpenExcelSdk
 
 
-OpenExcelExport tool:
-
-Command line application to export excel file content to a output Excel, based on OpenExcelSdk library.
-
-https://pierlam.github.io/OpenExcelExport/
-
+## Code Samples
 
 ```
 // Get Cell Value:
@@ -26,3 +20,8 @@ class GetCellValue
 class ScanDataRowCells
 ```
 
+## OpenExcelExport tool
+
+Command line application to export excel file content to a output Excel, based on OpenExcelSdk library.
+
+https://pierlam.github.io/OpenExcelExport/
