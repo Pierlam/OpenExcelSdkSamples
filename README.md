@@ -10,6 +10,14 @@ https://github.com/Pierlam/OpenExcelSdk
 Nuget:
 https://www.nuget.org/packages/OpenExcelSdk
 
+
+OpenExcelExport tool:
+
+Command line application to export excel file content to a output Excel, based on OpenExcelSdk library.
+
+https://pierlam.github.io/OpenExcelExport/
+
+
 ```
 // Get Cell Value:
 class GetCellValue
