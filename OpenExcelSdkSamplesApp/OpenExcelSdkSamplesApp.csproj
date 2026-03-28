@@ -12,14 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenExcelSdk" Version="0.6.0" />
+    <PackageReference Include="OpenExcelSdk" Version="0.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="ExcelFiles\GetCellValueRowByRow.xlsx">
+    <None Update="ExcelFiles\GetCellValue.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ExcelFiles\GetCellValue.xlsx">
+    <None Update="ExcelFiles\scanDatatable.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

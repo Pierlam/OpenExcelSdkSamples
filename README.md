@@ -10,22 +10,11 @@ https://github.com/Pierlam/OpenExcelSdk
 Nuget:
 https://www.nuget.org/packages/OpenExcelSdk
 
-
-## Open a Excel file and get data values
-
 ```
-// get some cell values, focus on basic value type, such as string, integer, double, date and time
-GetCellValue.GetBasicValue();
+// Get Cell Value:
+class GetCellValue
 
-// get some cell values, focus on currency value
-GetCellValue.GetCurrencyValue();
-
-// get cell value row by row
-GetCellValueRowByRow.Run();
+// scan datarow cells:
+class ScanDataRowCells
 ```
-
-
-## Creating a new Excel file and adding data
-
-
 
