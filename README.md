@@ -12,11 +12,14 @@ https://www.nuget.org/packages/OpenExcelSdk
 
 ## Code Samples
 
+Go inside the folder OpenExcelSdkSamplesApp.
+The subfolder ExcelFiles contains excel files samples used in source code.
+
 ```
 // Get Cell Value:
 class GetCellValue
 
-// scan datarow cells:
+// scan datarow cells: 3 ways to do it
 class ScanDataRowCells
 ```
 
