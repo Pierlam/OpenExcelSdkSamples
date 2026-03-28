@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenExcelSdk" Version="0.7.0" />
+    <PackageReference Include="OpenExcelSdk" Version="0.7.1" />
   </ItemGroup>
 
   <ItemGroup>
